@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dangki"
+    android:padding="10dp"
+    android:background="@color/bluee"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đăng Nhập"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/dangki"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+
+        >
+
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/dangki"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bluee"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        >
+
+        <EditText
+            android:id="@+id/edittextuser"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:layout_marginBottom="30dp"
+            android:background="@color/white"
+            android:hint=" Tên Đăng Nhập"
+            android:padding="10dp"
+            tools:ignore="MissingConstraints"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:drawableLeft="@drawable/dn"
+            />
+
+        <EditText
+            android:id="@+id/edittextpassword"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:background="@color/white"
+            android:hint=" Mật Khẩu"
+            android:padding="10dp"
+            android:password="true"
+            tools:ignore="Deprecated,MissingConstraints"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:drawableLeft="@drawable/mk"
+            />
+<!--        <EditText-->
+<!--            android:id="@+id/username"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="59dp"-->
+<!--            android:layout_marginBottom="10dp"-->
+<!--            android:background="@color/white"-->
+<!--            android:hint=" Username "-->
+<!--            android:padding="10dp"-->
+<!--            tools:ignore="MissingConstraints"-->
+<!--            android:layout_marginTop="30dp"-->
+<!--            android:layout_marginRight="20dp"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:drawableLeft="@drawable/user"-->
+
+<!--            />-->
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10pt"
+            >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Đăng ký"
+                android:layout_marginRight="20dp"
+                android:id="@+id/btndangky"
+                />
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Đăng nhập"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/btndangnhap"
+
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Thoát"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/btnthoat"
+
+                />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
